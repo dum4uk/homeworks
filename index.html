@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДЗ №5 (CSS)</title>
+    <title>ДЗ №6 ( Псевдоэлементы, псевдоклассы)</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
@@ -14,24 +14,60 @@
 
 
 <body>
-    <p class="first">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus exercitationem nulla ipsum perspiciatis quisquam, autem, quo corrupti tempora perferendis quod porro a iure architecto officiis.
-    </p>
-    <p class="second">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam officia architecto quis minus aut, quisquam deleniti ratione dignissimos pariatur totam odit sequi libero natus praesentium corrupti voluptatibus corporis accusantium repellat
-        ullam ducimus! Dolor nemo, doloremque aliquam repudiandae, saepe omnis modi numquam quidem esse cum voluptatum, laborum quo nam harum?
-    </p>
-    <div class="third">
-        <p class="fourth">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quaerat cumque possimus, amet, voluptatem quia corrupti dolor accusantium ea autem vel? Maxime voluptatem rerum doloribus alias tempore facilis inventore excepturi quibusdam laboriosam, ullam
-            assumenda corrupti debitis nisi necessitatibus consequuntur dolore non sit, velit reprehenderit accusamus repellendus itaque? Quia, odit culpa.
-        </p>
-        <p class="fifth">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem necessitatibus harum itaque quae sunt ducimus, non molestiae possimus ex illum esse accusantium beatae ipsam quia magni, minima suscipit dolor? Ab assumenda beatae adipisci aut quisquam placeat
-            voluptatibus libero aliquam minima incidunt sit dignissimos quia quibusdam explicabo cum, recusandae nesciunt magni!
-        </p>
-    </div>
+    <ul class="list-a">
+        <li>Put on this page information about your product</li>
+        <li>A detailed description of your product</li>
+        <li>Tell us about the advantages and merits</li>
+        <li>Associate the page with the payment system</li>
+    </ul>
+    <ul class="list-b">
+        <li>Put on this page information about your product</li>
+        <li><span class="line">A detailed description of your product</span></li>
+        <li>Tell us about the advantages and merits</li>
+        <li>Associate the page with the payment system</li>
+    </ul>
+    <div class="buttons">
+        <button class="textbutton-a" type="submit"><span>Full story</span></button>
+        <button class="textbutton-b" type="submit"><span>Full story</span></button>
+        <button class="textbutton-c" type="submit"><span>Full story</span></button>
 
+    </div>
+    <div class="textinput">
+        <input type="text" name="text" class="textinput-a">
+        <input type="text" name="text" class="textinput-b">
+    </div>
+    <p class="text-a">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore fuga dicta neque, laudan tium ratione nemo architecto tempora consequatur, officia corporis. Officia atque ex minima ac cusantium eius ea excepturi incidunt.
+    </p>
+    <p class="text-b">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore fuga dicta neque, laudan tium ratione nemo architecto tempora consequatur, officia corporis. Officia atque ex minima ac cusantium eius ea excepturi incidunt.
+    </p>
+    <a class="link_a" href="http://google.com">Google</a>
+    <a class="link_b" href="http://google.com">Google</a>
+    <a class="link_c" href="http://google.com">Google</a>
+    <img class="image" src="./img/1.jpg" alt="cartoon_picture">
+    <div class="text_a">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusantium blanditiis tempora, neque omnis necessitatibus provident vero assumenda earum modi unde nobis nihil illo dignissimos magni facere quidem voluptate reprehenderit accusamus
+            suscipit impedit commodi perferendis delectus quisquam. Odio doloribus modi hic ipsa tempora accusamus. Animi molestias soluta eligendi odio reiciendis!</p>
+    </div>
+    <div class="text_b">
+        <p>Lorem ipsum dolor, sit amet <sub>consectetur</sub> adipisicing <sup>elit</sup>. Repellat dignissimos molestias facere accusantium laudantium eaque cum exercitationem, sed deleniti? Eligendi?</p>
+    </div>
+    <div class="text_c">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem quo numquam rem et illum necessitatibus, quis corrupti, sit eaque at molestiae dolorum? Harum dolorum repudiandae repellat beatae illo, quod sed facilis possimus quisquam
+            minima exercitationem, ducimus ratione doloremque ad laudantium molestias itaque perferendis. Inventore nihil vero modi fugiat, soluta dolorum facere eius fuga sed, rem labore doloribus quam necessitatibus!</p>
+    </div>
+    <ul class="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <div class="text_d">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sequi quae perferendis sint quidem optio aliquid quod repellat voluptate dignissimos? Tempora magnam, sed voluptatum porro expedita quae nesciunt repellendus suscipit corrupti dolorem
+            nulla, omnis dicta unde deleniti eveniet temporibus impedit qui, doloremque recusandae neque quaerat ratione. Labore, pariatur? Ipsa, officia.</p>
+    </div>
+    <button type="button" class="button">Help</button>
 
 </body>
 
