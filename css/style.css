@@ -1,156 +1,132 @@
-                    body {
-                        width: 100%;
-                        padding: 30px;
-                        background-color: gainsboro;
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-                    
-                    .information {
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-                    
-                    h2 {
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 22px;
-                        font-weight: 700;
-                    }
-                    
-                    .about {
-                        width: 100%;
-                        margin-bottom: 20px;
-                        background-color: gainsboro
-                    }
-                    
-                    .about_background {
-                        padding: 10px;
-                        background-color: #fff;
-                    }
-                    
-                    .company {
-                        width: 100%;
-                        margin-bottom: 20px;
-                        background-color: gainsboro;
-                    }
-                    
-                    .company_background {
-                        padding: 10px;
-                        background-color: #fff;
-                    }
-                    
-                    .services {
-                        width: 100%;
-                        margin-bottom: 20px;
-                        background-color: gainsboro;
-                    }
-                    
-                    .services_background {
-                        padding: 10px;
-                        background-color: #fff;
-                    }
-                    
-                    .content {
-                        width: 100%;
-                        margin-bottom: 20px;
-                        padding: 10px;
-                        background-color: #fff;
-                    }
-                    
-                    .sidebox {
-                        padding: 10px;
-                        width: 100%;
-                        background-color: #fff;
-                    }
-                    
-                    ul {
-                        padding: 10px;
-                        background-color: darkgray;
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
-                    
-                    a {
-                        color: black;
-                    }
-                    
-                    li {
-                        margin-bottom: 30px;
-                    }
-                    
-                    li:last-child {
-                        margin-bottom: 0;
-                    }
-                    
-                    h1 {
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 24px;
-                        font-weight: 700;
-                    }
-                    
-                    h3 {
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 20px;
-                        font-weight: 700;
-                    }
-                    
-                    @media (min-width: 768px) {
-                        .about {
-                            width: 50%;
-                            display: inline-block;
-                            vertical-align: middle;
-                            padding: 0 10px 0 0;
-                        }
-                        .company {
-                            width: 50%;
-                            display: inline-block;
-                            vertical-align: middle;
-                            margin-left: -5px;
-                            padding: 0 0 0 10px;
-                        }
-                    }
-                    
-                    @media (min-width: 1024px) {
-                        .about {
-                            width: calc(100%/3);
-                            display: inline-block;
-                            vertical-align: middle;
-                            padding: 0 10px 0 0;
-                        }
-                        .company {
-                            width: calc(100%/3);
-                            display: inline-block;
-                            vertical-align: middle;
-                            margin-left: -5px;
-                            padding: 0 10px 0 10px;
-                        }
-                        .services {
-                            width: calc(100%/3);
-                            display: inline-block;
-                            vertical-align: middle;
-                            margin-left: -5px;
-                            padding: 0 0 0 10px
-                        }
-                        .content {
-                            width: 60%;
-                            display: inline-block;
-                            vertical-align: middle;
-                            background-color: #fff;
-                            padding: 10px 5px 10px 10px;
-                        }
-                        .sidebox {
-                            width: 40%;
-                            margin-left: -5px;
-                            display: inline-block;
-                            vertical-align: middle;
-                            background-color: #fff;
-                            margin-bottom: 20px;
-                            padding: 10px 10px 10px 5px;
-                        }
-                        li {
-                            margin-bottom: 45px;
-                        }
-                    }
+body {
+    width: 100%;
+    padding: 30px;
+    background-color: gainsboro;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.information {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: gainsboro;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.col {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+}
+
+.col_item {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.details {
+    background-color: #fff;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.sidebox {
+    padding: 10px;
+    width: 100%;
+}
+
+ul {
+    padding: 10px;
+    background-color: darkgray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    color: black;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .col {
+        width: calc(100%/2);
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -5px;
+        padding: 0 0 0 10px;
+    }
+    .information :first-child {
+        margin-left: 0px;
+        padding: 0 10px 0 0;
+    }
+    .information :last-child {
+        padding: 0 5px 0 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .col {
+        width: calc(100%/3);
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -5px;
+        padding: 0 10px 0 10px;
+    }
+    .information :first-child {
+        margin-left: 0px;
+        padding: 0 10px 0 0;
+    }
+    .information :last-child {
+        padding: 0 0 0 10px;
+    }
+    .content {
+        width: 60%;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        padding: 10px 5px 10px 10px;
+    }
+    .sidebox {
+        width: 40%;
+        margin-left: -5px;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 10px 10px 10px 5px;
+    }
+    li {
+        margin-bottom: 45px;
+    }
+}
