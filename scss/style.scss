@@ -1,0 +1,78 @@
+@import 'reset';
+@import 'fonts';
+:root {
+    --m_b: 30px;
+    --g_p: 20px;
+    --c_b: mediumslateblue;
+}
+
+body {
+    min-width: 100%;
+    padding: 30px;
+    background-color: darkmagenta;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.colum {
+    background-color: var(--c_b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    border-width: 2px 2px 1px;
+    border-style: solid;
+    padding: var(--g_p);
+}
+
+.container_sidebar {
+    padding: var(--g_p);
+    width: 100%;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.container {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        &_item {
+            flex: calc(60% - 10px);
+            margin-right: 10px;
+        }
+        &_sidebar {
+            flex: calc(40% - 10px);
+            margin-left: 10px;
+            height: auto;
+        }
+    }
+}
+
+.container_item {
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        .colum {
+            width: 50%;
+        }
+    }
+}
