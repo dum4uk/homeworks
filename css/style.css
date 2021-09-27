@@ -57,9 +57,9 @@ select {
 }
 
 :root {
-  --m_b: 30px;
-  --g_p: 20px;
-  --c_b: mediumslateblue;
+  --margin_bottom: 30px;
+  --general_padding: 20px;
+  --color_background: mediumslateblue;
 }
 
 body {
@@ -89,10 +89,12 @@ p {
 }
 
 .colum {
-  background-color: var(--c_b);
+  background-color: var(--color_background);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -103,11 +105,11 @@ p {
   height: 300px;
   border-width: 2px 2px 1px;
   border-style: solid;
-  padding: var(--g_p);
+  padding: var(--general_padding);
 }
 
 .container_sidebar {
-  padding: var(--g_p);
+  padding: var(--general_padding);
   width: 100%;
   height: 100px;
   border: 2px solid black;
