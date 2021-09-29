@@ -1,79 +1,112 @@
 @import 'reset';
-@import 'fonts';
-:root {
-    --margin_bottom: 30px;
-    --general_padding: 20px;
-    --color_background: mediumslateblue;
-}
-
 body {
-    min-width: 100%;
-    padding: 30px;
-    background-color: darkmagenta;
+    background-color: orange;
+    position: relative;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.colum {
-    background-color: var(--color_background);
+.traffic-lights {
+    width: 250px;
+    height: 680px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    border-width: 2px 2px 1px;
-    border-style: solid;
-    padding: var(--general_padding);
-}
-
-.container_sidebar {
-    padding: var(--general_padding);
-    width: 100%;
-    height: 100px;
-    border: 2px solid black;
-}
-
-.container {
-    @media (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        &_item {
-            flex: calc(60% - 10px);
-            margin-right: 10px;
-        }
-        &_sidebar {
-            flex: calc(40% - 10px);
-            margin-left: 10px;
-            height: auto;
-        }
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .circle {
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 1px solid #000;
+        width: 150px;
+        height: 150px;
+    }
+    .color_red {
+        background-color: darkgray;
+        animation-name: color_red;
+        animation-duration: 7s;
+        animation-timing-function: ease-in;
+        animation-delay: 13s;
+        animation-direction: normal;
+        animation-iteration-count: 1;
+        animation-fill-mode: none;
+    }
+    .color_yellow {
+        background-color: darkgray;
+        animation-name: color_yellow_first, color_yellow_second;
+        animation-duration: 3s, 1.7s;
+        animation-timing-function: ease-in;
+        animation-delay: 11s, 18s;
+        animation-direction: normal;
+        animation-iteration-count: 1, 1;
+        animation-fill-mode: none;
+    }
+    .color_green {
+        background-color: darkgray;
+        animation-name: color_green_first, color_green_second;
+        animation-duration: 7s, 1.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s, 7s;
+        animation-direction: normal;
+        animation-iteration-count: 1, 3;
+        animation-fill-mode: none;
     }
 }
 
-.container_item {
-    @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        .colum {
-            width: 50%;
-        }
+.pillar {
+    width: 50px;
+    height: 265px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+@keyframes color_green_first {
+    0% {
+        background-color: darkgray;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes color_green_second {
+    0% {
+        background-color: darkgray;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+@keyframes color_yellow_first {
+    0% {
+        background-color: darkgray;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes color_yellow_second {
+    0% {
+        background-color: darkgray;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes color_red {
+    0% {
+        background-color: darkgray;
+    }
+    100% {
+        background-color: red;
     }
 }
