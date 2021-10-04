@@ -4,21 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДЗ 12 (Animations)</title>
+    <title>Cutspace</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="traffic-lights">
-        <div class="circle color_red"></div>
-        <div class="circle color_yellow"></div>
-        <div class="circle color_green"></div>
-    </div>
-    <div class="pillar"></div>
+    <header class="navbar container">
+        <img src="img/logo.svg" class="logo" alt="logo">
+        <ul class="navbar-list">
+            <li class="navbar-list-item activ">
+                <a href="">Home</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="">About us</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="">Find space</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="">Share space</a>
+            </li>
+            <li class="navbar-list-item">
+                <a href="">Promote space</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="intro-sect">
+            <div class="container">
+                <div class="intro-row">
+                    <div class="col-1">
+                        <h1 class="main-heading">Find your custom matched commercial real estate space.</h1>
+                        <p class="text">In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique</p>
+                        <form action="" class="intro-form">
+                            <input type="email" placeholder="Your email adress" class="intro-form-input">
+                            <input type="submit" value="Subscrible" class="btn">
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <img src="img/first-block-img.jpg" class="intro-img" alt="first-block-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-sect">
+            <div class="container">
+                <div class="company-logo">
+                    <ul class="company-logo-list">
+                        <li class="company-logo-item"><img src="img/company-logo1.png" alt="company-logo1"></li>
+                        <li class="company-logo-item"><img src="img/company-logo2.png" alt="company-logo2"></li>
+                        <li class="company-logo-item"><img src="img/company-logo3.png" alt="company-logo3"></li>
+                        <li class="company-logo-item"><img src="img/company-logo4.png" alt="company-logo4"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="colum-1">
+                    <img src="img/info-img1.jpg" class="info-img1" alt="info-img1">
+                    <div class="info-img">
+                        <img src="img/info-img2.jpg" class="info-img2" alt="info-img2">
+                        <div class="info-text">
+                            <h3 class="third-heading">Twelve West Lake</h3>
+                            <p class="text">Space for up to 150 people</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="colum-2">
+                    <h2 class="second-heading">We provide best space for you!</h2>
+                    <p class="text">Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex ea quid est et via procedat oratio quaerimus.</p>
+                    <p class="text">quid aut ad id omnia referri oporteat, ipsum autem nusquam hoc epicurus in ea commodi consequatur?</p>
+                    <input type="submit" value="Learn more" class="btn">
+                </div>
+            </div>
+        </section>
+    </main>
 
+</body>
 
 
 </html>
