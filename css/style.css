@@ -608,6 +608,15 @@ body {
   font-weight: normal;
   font-size: 16px;
   margin-bottom: 30px;
+  color: #FFFFFF;
+}
+
+.product-info .btn {
+  text-decoration: none;
+}
+
+.product-info .product_btn {
+  text-decoration: none;
 }
 
 .product_btn {
@@ -633,15 +642,16 @@ body {
   width: 12px;
   height: 12px;
   position: absolute;
-  left: 50%;
+  left: 20px;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @media (max-width: 576px) {
   .product_btn {
     margin-top: 20px;
+    margin-left: 0;
   }
 }
 
